@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação Electron</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aplicação Electron</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o Electron</h2>
+            <p>
+                Electron permite criar aplicações desktop multiplataforma utilizando tecnologias web como HTML, CSS e
+                JavaScript.
+                Com acesso a APIs do sistema operacional, é possível desenvolver soluções robustas, como Visual Studio
+                Code e Discord.
+            </p>
+        </section>
+
+        <section>
+            <h2>Teste de Preload</h2>
+            <article>
+                <h3>Criar Arquivo TXT</h3>
+                <p>Clique no botão abaixo para gerar um arquivo TXT:</p>
+                <button type="button" id="btn" onclick="escreverArquivo()">Escrever no Arquivo</button>
+            </article>
+        </section>
+
+        <section>
+            <h2>Informações</h2>
+            <p>
+                Através da API do Electron, é possível obter diversas informações do sistema. Veja um exemplo abaixo:
+            </p>
+            <p id="info"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim.</p>
+    </footer>
+    <script src="scripts/renderer.js"></script>
+</body>
+
+</html>
